@@ -63,7 +63,7 @@ function ModalBeer({ visible = false, setVisible, beer }) {
           <p>SRM: {beer.srm}</p>
           <p>Tagline: {beer.tagline}</p>
           <br /> 
-          <MyBtn onClick={() => setVisible(false)}>Exit</MyBtn>
+          <MyBtn style={{marginBottom: '3rem'}} onClick={() => setVisible(false)}>Exit</MyBtn>
         </div>
       </div>
     </div>
