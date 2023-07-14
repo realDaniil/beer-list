@@ -5,7 +5,6 @@ import MyBtn from '../UI/btn/MyBtn'
 
 function ModalBeer({ visible = false, setVisible, beer }) {
   const modalClasses = [cl.modalBeer]
-  console.log(beer.id, beer.boil_volume, beer)
   if (visible) {
     modalClasses.push(cl.active);
   }
