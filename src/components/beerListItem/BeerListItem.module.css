@@ -1,0 +1,32 @@
+.beer_list_item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+  border: solid 2px coral;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.beer_list_item.active {
+  background: rgb(255, 209, 153);
+}
+
+.img_holder {
+  min-width: 200px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_holder img {
+  height: 100%;
+}
+
+@media (max-width: 500px) {
+  .beer_list_item {
+    flex-direction: column;
+  }
+}

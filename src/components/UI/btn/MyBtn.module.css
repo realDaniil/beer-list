@@ -1,0 +1,15 @@
+.btn {
+  padding: 5px 10px;
+  border: solid coral 2px;
+  cursor: pointer;
+  color: coral;
+  font-weight: 600;
+  background: white;
+  transition: 0.2s;
+  width: fit-content;
+}
+
+.btn:hover {
+  color: white;
+  background: coral;
+}

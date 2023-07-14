@@ -1,0 +1,76 @@
+.BeerListComponent {
+  width: 90%;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1400px;
+}
+
+.btn_holder {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: coral;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.2s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn_holder:hover {
+  filter: brightness(0.7);
+}
+
+.trash_btn_holder {
+  pointer-events: none;
+  right: 60px;
+  bottom: -60px;
+}
+
+.trash_btn_holder.active {
+  bottom: 20px;
+  pointer-events: all;
+}
+
+.trash_btn_holder.active:hover {
+  filter: brightness(1);
+  background: crimson;
+}
+
+.pagination {
+  display: flex;
+  margin: 3rem 0;
+}
+
+.pagination div {
+  border: 2px solid coral;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 2px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.pagination div:hover {
+  color: white;
+  background: coral;
+}
+
+@media (max-width: 400px) {
+  .BeerListComponent {
+    width: 80%;
+  }
+}

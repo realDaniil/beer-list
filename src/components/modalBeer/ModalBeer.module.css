@@ -1,0 +1,63 @@
+.modalBeer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  background: rgba(0,0,0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.content {
+  max-width: 90vw;
+  padding: 25px;
+  background: white;
+  min-width: 250px;
+  overflow-y: auto;
+  max-height: 90vh;
+  position: relative;
+}
+
+.modalBeer.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.close_btn_holder {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.close_btn_holder:hover {
+  background: rgb(236, 236, 236);
+}
+
+.img_holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+
+.img_holder img {
+  height: 100%;
+}
+
+.description {
+
+}
+
+.ingredients_section {
+
+}
