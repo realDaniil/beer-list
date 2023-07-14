@@ -12,8 +12,8 @@ function ModalBeer({ visible = false, setVisible, beer }) {
   return (
     <div className={modalClasses.join(' ')} onClick={() => setVisible(false)}>
       <div className={cl.content} onClick={(e) => e.stopPropagation()}>
-        <div className={cl.close_btn_holder}>
-          <IoCloseSharp onClick={() => setVisible(false)} />
+        <div className={cl.close_btn_holder} onClick={() => setVisible(false)}>
+          <IoCloseSharp />
         </div>
         <div className={cl.img_holder}>
           <img src={beer.image_url} alt="beer img" />
